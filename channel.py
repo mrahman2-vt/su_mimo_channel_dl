@@ -2,7 +2,7 @@
 import numpy as np
 def scatteringchnmtx(rays, tx_array, num_tx, rx_array, num_rx):
     """
-    Estima o canal ataves atraves do modelo geometrico narrowband utilizando os dados de ray-tracing, utilizando angulo de elevacao e azimute. Retorna a matriz de canal.
+    Estimate the channel through the narrowband geometric model using ray-tracing data, utilizing elevation and azimuth angles. Return the channel matrix.
     """
     h = np.zeros(num_tx * num_rx).reshape(num_rx, num_tx)
     
